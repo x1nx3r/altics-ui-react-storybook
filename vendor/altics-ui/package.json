@@ -1,6 +1,6 @@
 {
   "name": "@altics/ui",
-  "version": "0.1.0+a1ceac9",
+  "version": "0.1.0+7d584b2",
   "main": "./index.cjs",
   "module": "./index.js",
   "exports": {

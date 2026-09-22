@@ -10,7 +10,6 @@ const config: StorybookConfig = {
     "@storybook/addon-docs",
     "@storybook/addon-mcp"
   ],
-  "framework": "@storybook/react-vite",
-  viteFinal: async (config) => ({ ...config, base: '/altics-ui-react-storybook/' }),
+  "framework": "@storybook/react-vite"
 };
 export default config;
