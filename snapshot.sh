@@ -123,6 +123,7 @@ s = s.replace('"./stories/**/*.{ts,tsx}"', '"./stories/**/*.{ts,tsx}", "./exampl
 open(p, "w").write(s)
 PYEOF2
 
+printf "node_modules\nstorybook-static\ndist\n" > .gitignore
 echo "==> committing $LABEL"
 git add -A
 if git diff --cached --quiet; then
