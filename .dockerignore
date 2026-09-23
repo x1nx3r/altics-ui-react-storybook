@@ -1,0 +1,13 @@
+# The image installs and builds these itself.
+node_modules
+storybook-static
+dist
+
+# Repo metadata and dev-only files, not needed in the build context.
+.git
+.github
+.gitignore
+snapshot.sh
+README.md
+*.md
+*.log

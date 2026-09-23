@@ -92,11 +92,24 @@ npm install --package-lock-only -q
 cat > README.md <<EOF
 # altics-ui-react-storybook
 
-Review snapshots of \`@altics/ui\` branches, built for GitHub Pages.
+Review snapshots of \`@altics/ui\` branches, served in Docker.
 
 This snapshot: **$LABEL** (from \`altics-ui-react\`).
 
-Refresh with \`./snapshot.sh [branch]\`.
+## Build and run
+
+\`\`\`sh
+docker compose up --build      # http://localhost:8080
+\`\`\`
+
+The image builds Storybook from this snapshot and serves the static output
+with nginx at the domain root.
+
+## Refresh the snapshot
+
+\`\`\`sh
+./snapshot.sh [branch]         # default branch: main
+\`\`\`
 EOF
 
 mkdir -p examples

@@ -1,0 +1,7 @@
+services:
+  storybook:
+    build: .
+    image: altics-ui-react-storybook:local
+    ports:
+      - "8080:80"
+    restart: unless-stopped
